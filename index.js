@@ -7,7 +7,7 @@ var $time = document.getElementById('time');
 var messageCount = 0;
 
 function speech (text) {
-  var msg = new SpeechSynthesisUtterance();
+  var msg = window.SpeechSynthesisUtterance ? new SpeechSynthesisUtterance() : new webkitSpeechSynthesisUtterance;
   msg.text = text;
   msg.lang = 'es-MX';
 
