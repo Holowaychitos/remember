@@ -27,6 +27,8 @@
       margin: 0 0.5em;
       display: inline-block;
       margin: 0.5em;
+      box-sizing: border-box;
+      width: 100%;
     }
 
     .button {
@@ -48,6 +50,7 @@
     input {
       background: #eee;
       border: 1px solid #ddd;
+      width: 100%;
     }
 
     a {
@@ -74,6 +77,12 @@
       padding-top: 0.5em;
       font-size: 0.9em;
       color: #666;
+    }
+
+    @media screen and (max-width: 640px) {
+      #submit {
+        display: block;
+      }
     }
   </style>
 </head>
