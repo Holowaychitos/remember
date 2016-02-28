@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Call</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 1em;
+    }
+
+    input, .button {
+      font-size: 1em;
+      height: 2.5em;
+      line-height: 2.5em;
+      padding: 0 1em;
+      border-radius: 3px;
+      margin: 0 0.5em;
+      display: inline-block;
+    }
+
+    .button {
+      display: block;
+      color: #fff;
+      background: #0af;
+      border: 1px solid #09e;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    #submit {
+      display: flex;
+      justify-content: center;
+      padding: 3em;
+    }
+
+    input {
+      background: #eee;
+      border: 1px solid #ddd;
+    }
+
+    a {
+      display: block;
+    }
+
+    #message {
+      flex: 2;
+    }
+
+    #time {
+      flex: 1;
+    }
+
+    #submitBtn {
+      flex: 1;
+    }
+
+    #alarms > div {
+      padding: 1em 3em;
+    }
+
+    .message-time {
+      padding-top: 0.5em;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="submit">
+    <input id="message" type="text" placeholder="Mensaje" value='Terminar la presentación'>
+    <input id="time" type="number" placeholder="Tiempo" value='1'>
+    <a id="submitBtn" onclick="submit(event)" class="button">Agregar</a>
+  </div>
+
+  <div id="alarms"></div>
+
+  <script src="/index.js"></script>
+</body>
+</html>
